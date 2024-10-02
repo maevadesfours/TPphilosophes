@@ -1,0 +1,15 @@
+Question 1 : 
+Regarder dans le code la prise en charge du multithread et expliquer comment les accès 
+concurrents sont gérés :
+
+Chaque philosophe est un thread qui veut prendre deux baguettes pour les manger. Les 
+baguettes sont stockés avec des verrous, un par baguette, pour ne pas que 2 philosophes 
+prennent la même baguette.
+
+
+
+Question 2 : 
+Est-ce un deadlock ou une famine ? Pourquoi ce blocage apparaît-il ?
+
+C'est un deadlock car le blocage survient quand chaque philosophe prend une baguette 
+et attend l'autre, ce qui crée un blocage.
